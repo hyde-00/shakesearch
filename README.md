@@ -36,6 +36,8 @@ current state, can be deployed easily on Heroku's free tier.
 3. Display total number of matches found.
 4. Display results indicating in which story/novel the query string was found.
 
+Changes are hosted at: https://lit-journey-93419.herokuapp.com/
+
 ## Changes that could have been done with more time (priority wise)
 
 1. Fuzzy search to accept spelling mistakes.
