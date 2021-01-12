@@ -13,9 +13,25 @@ const Controller = {
   updateTable: (results) => {
     const table = document.getElementById("table-body");
     const rows = [];
-    for (let result of results) {
-      rows.push(`<tr>${result}<tr/>`);
+
+    if (results["count"] > 0) {
+      rows.push(`<div style="font-weight:bold">Total: ${results["count"]} matches found.</div>`);
+      rows.push(`<div> <div/>`);
+      Object.keys(results["data"]).forEach(function(key) {
+        values = results["data"][key];
+        rows.push(`<div style="font-weight:bold">${key}:</div>`);
+        for (let value of values) {
+          if (value.length > 1) {
+            rows.push(`<div>${value}</div>`);
+          }
+        }
+        rows.push(`<div> <div/>`);
+        rows.push(`<div> <div/>`);
+      });
+    } else {
+      rows.push(`<div>No matches found.</div>`);
     }
+
     table.innerHTML = rows;
   },
 };

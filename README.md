@@ -29,4 +29,17 @@ We will be primarily evaluating based on how well the search works for users. A 
 current state, can be deployed easily on Heroku's free tier.
 3. In your submission, share with us what changes you made and how you would prioritize changes if you had more time.
 
+## Changes
+
+1. Case insensitive searching.
+2. Multiple words can be searched.
+3. Display total number of matches found.
+4. Display results indicating in which story/novel the query string was found.
+
+## Changes that could have been done with more time (priority wise)
+
+1. Fuzzy search to accept spelling mistakes.
+2. Add pagination so that results are more readable.
+3. Bold the query string in the results to enable readablity.
+4. On searching multi-words, even search for each word individually and add it to last pages of search.
 
